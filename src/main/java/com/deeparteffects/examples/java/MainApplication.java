@@ -252,8 +252,8 @@ public class MainApplication extends JFrame {
 		}
 	}
 
-	private String uploadImage(int styleId) {
-		logger.info(String.format("Render image with style %d", styleId));
+	private String uploadImage(String styleId) {
+		logger.info(String.format("Render image with style %s", styleId));
 		PostUploadRequest postUploadRequest = new PostUploadRequest();
 		UploadRequest uploadRequest = new UploadRequest();
 		uploadRequest.setStyleId(styleId);
